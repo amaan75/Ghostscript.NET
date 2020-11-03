@@ -271,7 +271,8 @@ namespace Ghostscript.NET.Viewer
         {
             if (pageNumber >= this.FirstPageNumber && pageNumber <= this.LastPageNumber)
             {
-                this.Execute("Page pdfshowpage_init pdfshowpage_finish");
+                // this.Execute("Page pdfshowpage_init pdfshowpage_finish");
+                this.Execute("Page pdfshowpage");
             }
             else
             {
